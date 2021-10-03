@@ -45,8 +45,8 @@ class MyApp extends StatelessWidget {
     
    bottomNavigationBar: ClipRRect(
       borderRadius: const BorderRadius.only(
-        topRight: Radius.circular(40),
-        topLeft: Radius.circular(40),
+        topRight: Radius.circular(10),
+        topLeft: Radius.circular(10),
       ),
       child: BottomNavigationBar(
         items: const [
