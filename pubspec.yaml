@@ -78,7 +78,7 @@ flutter:
   fonts:
     - family: Sacramento
       fonts:
-        - asset: assets/Sacramento-Regular.ttf
+        - asset: assets/fonts/Sacramento-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
