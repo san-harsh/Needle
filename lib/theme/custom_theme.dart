@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
 
@@ -8,6 +10,11 @@ class CustomTheme {
       primaryColor: Colors.green,
       scaffoldBackgroundColor: Colors.white,
       appBarTheme: AppBarTheme(
+         shape: RoundedRectangleBorder(
+      borderRadius: BorderRadius.vertical(
+        bottom: Radius.circular(30),
+      ),
+    ),
         backgroundColor: HexColor('#F83E4B'),
         toolbarHeight: 60,
         centerTitle: true,
@@ -25,8 +32,10 @@ class CustomTheme {
       ),
       bottomNavigationBarTheme: BottomNavigationBarThemeData( backgroundColor: HexColor('#F83E4B'),
       selectedItemColor: Colors.white,
-      unselectedItemColor: Colors.white.withOpacity(.60),
+      unselectedItemColor: Colors.white.withOpacity(.60),  
+        
        )
+       
     );
   }
 }
