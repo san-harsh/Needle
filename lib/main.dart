@@ -17,7 +17,28 @@ class MyApp extends StatelessWidget {
         body: const Center(
           child: Text('Hello harsh '),
         ),
+        bottomNavigationBar: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+           
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.business),
+            label: 'Orders',
+            
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
+          ),
+        ],
       ),
+
+      ),
+      
       theme: CustomTheme.lightTheme,
     );
   }

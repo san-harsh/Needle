@@ -11,20 +11,22 @@ class CustomTheme {
         backgroundColor: HexColor('#F83E4B'),
         toolbarHeight: 60,
         centerTitle: true,
-        
+
         elevation: 10,
         titleTextStyle:
               const TextStyle(fontFamily: 'Sacramento',
                fontSize: 42,
               
                ),
-               
-        
       ),     
       buttonTheme: ButtonThemeData( // 4
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18.0)),
         buttonColor: Colors.purpleAccent,
-      )
+      ),
+      bottomNavigationBarTheme: BottomNavigationBarThemeData( backgroundColor: HexColor('#F83E4B'),
+      selectedItemColor: Colors.white,
+      unselectedItemColor: Colors.white.withOpacity(.60),
+       )
     );
   }
 }
