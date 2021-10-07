@@ -1,0 +1,7 @@
+//Running seperate file, make sure it has main function
+
+$ flutter run -t lib/demo.dart
+
+
+
+

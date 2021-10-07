@@ -1,7 +1,8 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, use_key_in_widget_constructors
 
 import 'package:flutter/material.dart';
 import './theme/custom_theme.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -20,40 +21,20 @@ class MyApp extends StatelessWidget {
           child: Text('Hello harsh '),
         ),
 
-
-       /*bottomNavigationBar: BottomNavigationBar(
-        type: BottomNavigationBarType.fixed,
-        items: const <BottomNavigationBarItem>[
-
-          BottomNavigationBarItem(
-  
-            icon: Icon(Icons.home),
-            label: 'Home',
-           
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.business),
-            label: 'Orders',
-            
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
-          ),
-        ],
-      ),*/
     
    bottomNavigationBar: ClipRRect(
       borderRadius: const BorderRadius.only(
         topRight: Radius.circular(10),
         topLeft: Radius.circular(10),
       ),
+
+
       child: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(icon: Icon(Icons.home), title: Text('Home')),
           BottomNavigationBarItem(icon: Icon(Icons.business), title: Text('My Orders')),
           BottomNavigationBarItem(
-              icon: Icon(Icons.settings), title: Text('Settings')),
+          icon: Icon(Icons.settings), title: Text('Settings')),
           
         ],
         
